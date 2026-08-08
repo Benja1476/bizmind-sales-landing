@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BizMind Enterprise Dashboard — Local-first Business Intelligence</title>
+<meta name="description" content="Business Intelligence และ Decision Support ที่ทำงานแบบ Local-first ไม่ต้องมี Server และไม่ต้องสมัคร Subscription สำหรับ Core Product">
+<meta name="keywords" content="Business Intelligence, BI Dashboard, Local-first BI, Decision Support, KPI Dashboard, Business Analytics, Enterprise Dashboard, Data Analysis, Business Intelligence Thailand">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ SKIP LINK ============ -->
+<a class="skip-link" href="#main">ข้ามไปยังเนื้อหาหลัก</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="top">
+  <div class="nav__inner">
+    <a class="nav__brand" href="#top" data-th="BizMind" data-en="BizMind">
+      <span class="nav__brand-mark" aria-hidden="true">◆</span>BizMind
+    </a>
+    <nav class="nav__links" aria-label="หลัก">
+      <a href="#product" data-th="ผลิตภัณฑ์" data-en="Product">ผลิตภัณฑ์</a>
+      <a href="#features" data-th="ฟีเจอร์" data-en="Features">ฟีเจอร์</a>
+      <a href="#demo" data-th="Demo" data-en="Demo">Demo</a>
+      <a href="#pricing" data-th="ราคา" data-en="Pricing">ราคา</a>
+      <a href="#faq" data-th="คำถาม" data-en="FAQ">คำถาม</a>
+      <a href="#contact" data-th="ติดต่อ" data-en="Contact">ติดต่อ</a>
+    </nav>
+    <div class="nav__actions">
+      <button class="icon-btn" id="lang-toggle" type="button" aria-label="Toggle language">TH/EN</button>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle dark or light mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z" fill="currentColor"/></svg>
+      </button>
+      <a class="btn btn--ghost nav__cta" href="#demo" data-th="ดู Demo" data-en="See Demo" data-track="hero_cta_click">ดู Demo</a>
+    </div>
+    <button class="nav__burger" id="nav-burger" type="button" aria-label="เปิดเมนู" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav__mobile" id="nav-mobile" aria-label="เมนูมือถือ">
+    <a href="#product" data-th="ผลิตภัณฑ์" data-en="Product">ผลิตภัณฑ์</a>
+    <a href="#features" data-th="ฟีเจอร์" data-en="Features">ฟีเจอร์</a>
+    <a href="#demo" data-th="Demo" data-en="Demo">Demo</a>
+    <a href="#pricing" data-th="ราคา" data-en="Pricing">ราคา</a>
+    <a href="#faq" data-th="คำถาม" data-en="FAQ">คำถาม</a>
+    <a href="#contact" data-th="ติดต่อ" data-en="Contact">ติดต่อ</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ============ 4. HERO ============ -->
+<section class="hero" id="product">
+  <div class="hero__grid" aria-hidden="true"></div>
+  <div class="hero__inner reveal">
+    <p class="eyebrow" data-th="LOCAL-FIRST BUSINESS INTELLIGENCE" data-en="LOCAL-FIRST BUSINESS INTELLIGENCE">LOCAL-FIRST BUSINESS INTELLIGENCE</p>
+    <h1 class="hero__headline">
+      <span data-th="วิเคราะห์ธุรกิจของคุณได้ทันที" data-en="Analyze your business instantly">วิเคราะห์ธุรกิจของคุณได้ทันที</span>
+      <span class="hero__headline-accent" data-th="โดยไม่ต้องมี Server และไม่ต้องจ่ายรายเดือน" data-en="No server required. No monthly fee.">โดยไม่ต้องมี Server และไม่ต้องจ่ายรายเดือน</span>
+    </h1>
+    <p class="hero__sub" data-th="BizMind Enterprise Dashboard คือเครื่องมือ Business Intelligence และ Decision Support ที่รวม Data Processing, KPI, Business Rules, Dashboard, Decision และ Reporting ไว้ในระบบเดียว" data-en="BizMind Enterprise Dashboard is a Business Intelligence and Decision Support tool that unifies Data Processing, KPI, Business Rules, Dashboard, Decision and Reporting in one system.">BizMind Enterprise Dashboard คือเครื่องมือ Business Intelligence และ Decision Support ที่รวม Data Processing, KPI, Business Rules, Dashboard, Decision และ Reporting ไว้ในระบบเดียว</p>
+    <div class="hero__ctas">
+      <a class="btn btn--primary" href="#features" data-th="ดูว่า BizMind ทำอะไรได้บ้าง" data-en="See what BizMind can do" data-track="hero_cta_click">ดูว่า BizMind ทำอะไรได้บ้าง</a>
+      <a class="btn btn--ghost" href="#demo" data-th="ดู Demo" data-en="See Demo" data-track="demo_click">ดู Demo</a>
+    </div>
+  </div>
+
+  <!-- 5 & 28. HERO VISUAL — Product UI mockup (not a real screenshot) -->
+  <div class="hero__visual reveal" data-track-view="product_screenshot_view">
+    <div class="mock-window">
+      <div class="mock-window__bar">
+        <span class="mock-window__title">BizMind</span>
+        <span class="mock-window__dots"><i></i><i></i><i></i></span>
+      </div>
+      <div class="mock-window__body">
+        <aside class="mock-sidebar">
+          <div class="mock-sidebar__item is-active" data-th="Executive" data-en="Executive">Executive</div>
+          <div class="mock-sidebar__item" data-th="Operations" data-en="Operations">Operations</div>
+          <div class="mock-sidebar__item" data-th="Sales" data-en="Sales">Sales</div>
+          <div class="mock-sidebar__item" data-th="Finance" data-en="Finance">Finance</div>
+          <div class="mock-sidebar__item" data-th="HR" data-en="HR">HR</div>
+          <div class="mock-sidebar__item" data-th="Production" data-en="Production">Production</div>
+        </aside>
+        <div class="mock-main">
+          <div class="mock-kpi-row">
+            <div class="mock-kpi"><span class="mock-kpi__label" data-th="Revenue" data-en="Revenue">Revenue</span><span class="mock-kpi__value">฿ ██.█M</span></div>
+            <div class="mock-kpi"><span class="mock-kpi__label" data-th="Risk" data-en="Risk">Risk</span><span class="mock-kpi__value mock-kpi__value--warn" data-th="ปานกลาง" data-en="Medium">ปานกลาง</span></div>
+            <div class="mock-kpi"><span class="mock-kpi__label" data-th="Status" data-en="Status">Status</span><span class="mock-kpi__value mock-kpi__value--ok" data-th="ปกติ" data-en="Normal">ปกติ</span></div>
+          </div>
+          <div class="mock-chart" aria-hidden="true">
+            <svg viewBox="0 0 280 90" preserveAspectRatio="none"><polyline points="0,70 30,60 60,64 90,40 120,48 150,30 180,36 210,18 240,24 280,10" /></svg>
+          </div>
+          <div class="mock-reco">
+            <span class="mock-reco__tag" data-th="คำแนะนำ" data-en="Recommendation">คำแนะนำ</span>
+            <span class="mock-reco__bar"></span>
+            <span class="mock-reco__bar mock-reco__bar--short"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="hero__visual-caption" data-th="ตัวอย่าง UI Mockup ของระบบจริง" data-en="Product UI mockup shown above">ตัวอย่าง UI Mockup ของระบบจริง</p>
+  </div>
+</section>
+
+<!-- ============ 6. VALUE STRIP ============ -->
+<section class="value-strip reveal">
+  <div class="value-strip__inner">
+    <div class="value-strip__item">
+      <span class="value-strip__title" data-th="NO SERVER" data-en="NO SERVER">NO SERVER</span>
+      <span class="value-strip__desc" data-th="ไม่ต้องมี Server" data-en="No server needed">ไม่ต้องมี Server</span>
+    </div>
+    <div class="value-strip__item">
+      <span class="value-strip__title" data-th="NO SUBSCRIPTION" data-en="NO SUBSCRIPTION">NO SUBSCRIPTION</span>
+      <span class="value-strip__desc" data-th="ไม่มีค่ารายเดือน" data-en="No monthly fee">ไม่มีค่ารายเดือน</span>
+    </div>
+    <div class="value-strip__item">
+      <span class="value-strip__title" data-th="LOCAL-FIRST" data-en="LOCAL-FIRST">LOCAL-FIRST</span>
+      <span class="value-strip__desc" data-th="ข้อมูลประมวลผลในเครื่อง" data-en="Data processed on your device">ข้อมูลประมวลผลในเครื่อง</span>
+    </div>
+    <div class="value-strip__item">
+      <span class="value-strip__title" data-th="NO IT APPROVAL" data-en="NO IT APPROVAL">NO IT APPROVAL</span>
+      <span class="value-strip__desc" data-th="ไม่ต้องรอ IT" data-en="No IT wait">ไม่ต้องรอ IT</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. PROBLEM ============ -->
+<section class="section problem" id="problem">
+  <div class="section__inner reveal">
+    <h2 class="section__heading" data-th="Business Intelligence ไม่ควรต้องยุ่งยากขนาดนี้" data-en="Business Intelligence shouldn't be this hard">Business Intelligence ไม่ควรต้องยุ่งยากขนาดนี้</h2>
+    <div class="pain-grid">
+      <div class="pain-card">
+        <span class="pain-card__num">01</span>
+        <h3 data-th="Subscription" data-en="Subscription">Subscription</h3>
+        <p data-th="ต้องจ่ายค่า BI ทุกเดือน" data-en="Paying for BI every month">ต้องจ่ายค่า BI ทุกเดือน</p>
+      </div>
+      <div class="pain-card">
+        <span class="pain-card__num">02</span>
+        <h3 data-th="Server" data-en="Server">Server</h3>
+        <p data-th="ต้องมี Server / Database / Infrastructure" data-en="Requires server / database / infrastructure">ต้องมี Server / Database / Infrastructure</p>
+      </div>
+      <div class="pain-card">
+        <span class="pain-card__num">03</span>
+        <h3 data-th="IT Dependency" data-en="IT Dependency">IT Dependency</h3>
+        <p data-th="ต้องรอ IT ติดตั้งหรืออนุมัติ" data-en="Waiting on IT to install or approve">ต้องรอ IT ติดตั้งหรืออนุมัติ</p>
+      </div>
+      <div class="pain-card">
+        <span class="pain-card__num">04</span>
+        <h3 data-th="Data Concern" data-en="Data Concern">Data Concern</h3>
+        <p data-th="ไม่ต้องการนำข้อมูลธุรกิจขึ้น Cloud" data-en="Not wanting business data on the cloud">ไม่ต้องการนำข้อมูลธุรกิจขึ้น Cloud</p>
+      </div>
+      <div class="pain-card">
+        <span class="pain-card__num">05</span>
+        <h3 data-th="Complexity" data-en="Complexity">Complexity</h3>
+        <p data-th="เครื่องมือ BI บางประเภทมีความซับซ้อนเกินความต้องการของผู้ใช้บางกลุ่ม" data-en="Some BI tools are more complex than certain users need">เครื่องมือ BI บางประเภทมีความซับซ้อนเกินความต้องการของผู้ใช้บางกลุ่ม</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. PRODUCT EXPLANATION ============ -->
+<section class="section explain">
+  <div class="section__inner reveal">
+    <div class="explain__grid">
+      <div class="explain__text">
+        <h2 class="section__heading" data-th="ไม่ใช่แค่ Dashboard" data-en="Not just a dashboard">ไม่ใช่แค่ Dashboard</h2>
+        <p class="section__lead" data-th="BizMind ถูกออกแบบให้เป็นระบบวิเคราะห์และช่วยตัดสินใจทางธุรกิจ ไม่ใช่เพียงหน้าจอสำหรับดูกราฟ" data-en="BizMind is designed as a business analysis and decision-support system — not just a screen for viewing charts.">BizMind ถูกออกแบบให้เป็นระบบวิเคราะห์และช่วยตัดสินใจทางธุรกิจ ไม่ใช่เพียงหน้าจอสำหรับดูกราฟ</p>
+      </div>
+      <ol class="flow-list">
+        <li data-th="Load Data" data-en="Load Data">Load Data</li>
+        <li data-th="Clean Data" data-en="Clean Data">Clean Data</li>
+        <li data-th="Validate" data-en="Validate">Validate</li>
+        <li data-th="Calculate KPI" data-en="Calculate KPI">Calculate KPI</li>
+        <li data-th="Apply Business Rules" data-en="Apply Business Rules">Apply Business Rules</li>
+        <li data-th="Analyze" data-en="Analyze">Analyze</li>
+        <li data-th="Decision" data-en="Decision">Decision</li>
+        <li data-th="Report" data-en="Report">Report</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. SHOW THE ENGINE — signature interactive pipeline ============ -->
+<section class="section engine">
+  <div class="section__inner reveal">
+    <h2 class="section__heading" data-th="จากข้อมูลดิบ สู่คำตอบทางธุรกิจ" data-en="From raw data to a business answer">จากข้อมูลดิบ สู่คำตอบทางธุรกิจ</h2>
+    <p class="section__lead" data-th="แตะหรือชี้ที่แต่ละขั้นตอนเพื่อดูรายละเอียด" data-en="Hover or tap each stage to see what it does">แตะหรือชี้ที่แต่ละขั้นตอนเพื่อดูรายละเอียด</p>
+
+    <div class="pipeline" id="pipeline" role="list">
+      <!-- nodes injected identically in HTML for no-js fallback -->
+      <button type="button" class="pipeline__node" role="listitem" data-desc-th="นำข้อมูลดิบเข้าสู่ระบบ" data-desc-en="Bring raw data into the system">
+        <span class="pipeline__idx">01</span><span data-th="DATA" data-en="DATA">DATA</span>
+      </button>
+      <button type="button" class="pipeline__node" role="listitem" data-desc-th="จัดการ Header, Data Type และรูปแบบข้อมูล" data-desc-en="Normalize headers, data types and formats">
+        <span class="pipeline__idx">02</span><span data-th="DATA CLEANING" data-en="DATA CLEANING">DATA CLEANING</span>
+      </button>
+      <button type="button" class="pipeline__node" role="listitem" data-desc-th="ตรวจสอบ Required Fields, Unique Key และ Missing Data" data-desc-en="Check required fields, unique keys and missing data">
+        <span class="pipeline__idx">03</span><span data-th="VALIDATION" data-en="VALIDATION">VALIDATION</span>
+      </button>
+      <button type="button" class="pipeline__node" role="listitem" data-desc-th="กำหนดเงื่อนไขทางธุรกิจเพื่อประเมินสถานะและความเสี่ยง" data-desc-en="Apply business conditions to assess status and risk">
+        <span class="pipeline__idx">04</span><span data-th="RULE ENGINE" data-en="RULE ENGINE">RULE ENGINE</span>
+      </button>
+      <button type="button" class="pipeline__node" role="listitem" data-desc-th="จัดเก็บตัวเลขที่ผ่านการตรวจสอบแล้วอย่างเป็นระบบ" data-desc-en="Hold verified figures in a structured ledger">
+        <span class="pipeline__idx">05</span><span data-th="NUMBERS LEDGER" data-en="NUMBERS LEDGER">NUMBERS LEDGER</span>
+      </button>
+      <button type="button" class="pipeline__node" role="listitem" data-desc-th="คำนวณสูตรที่ผูกกับตัวเลขในระบบ" data-desc-en="Run the formulas tied to those figures">
+        <span class="pipeline__idx">06</span><span data-th="FORMULA ENGINE" data-en="FORMULA ENGINE">FORMULA ENGINE</span>
+      </button>
+      <button type="button" class="pipeline__node" role="listitem" data-desc-th="สร้างและคำนวณ KPI จากข้อมูลธุรกิจ" data-desc-en="Build and calculate KPIs from business data">
+        <span class="pipeline__idx">07</span><span data-th="KPI ENGINE" data-en="KPI ENGINE">KPI ENGINE</span>
+      </button>
+      <button type="button" class="pipeline__node" role="listitem" data-desc-th="เปลี่ยนผล KPI และ Business Rules เป็น Status, Priority, Risk, Recommendation" data-desc-en="Turn KPI and rule results into status, priority, risk, recommendation">
+        <span class="pipeline__idx">08</span><span data-th="DECISION ENGINE" data-en="DECISION ENGINE">DECISION ENGINE</span>
+      </button>
+      <button type="button" class="pipeline__node" role="listitem" data-desc-th="แสดงผลตามมุมมองของแต่ละแผนก" data-desc-en="Present results by department view">
+        <span class="pipeline__idx">09</span><span data-th="DASHBOARD" data-en="DASHBOARD">DASHBOARD</span>
+      </button>
+      <button type="button" class="pipeline__node" role="listitem" data-desc-th="ส่งออกผลลัพธ์เป็นรายงานหรือไฟล์ตามต้องการ" data-desc-en="Export the results as a report or file">
+        <span class="pipeline__idx">10</span><span data-th="REPORT / EXPORT" data-en="REPORT / EXPORT">REPORT / EXPORT</span>
+      </button>
+    </div>
+    <p class="pipeline__desc" id="pipeline-desc" aria-live="polite" data-th="แตะหรือชี้ที่แต่ละขั้นตอนเพื่อดูรายละเอียด" data-en="Hover or tap each stage to see what it does">แตะหรือชี้ที่แต่ละขั้นตอนเพื่อดูรายละเอียด</p>
+  </div>
+</section>
+
+<!-- ============ 9. FEATURES ============ -->
+<section class="section features" id="features">
+  <div class="section__inner reveal">
+    <h2 class="section__heading" data-th="ทุกอย่างที่ต้องใช้ในการวิเคราะห์ธุรกิจ อยู่ในระบบเดียว" data-en="Everything you need to analyze your business, in one system">ทุกอย่างที่ต้องใช้ในการวิเคราะห์ธุรกิจ อยู่ในระบบเดียว</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3 data-th="Data Input" data-en="Data Input">Data Input</h3>
+        <p data-th="นำข้อมูลเข้าระบบและสร้าง Dataset" data-en="Bring data in and build a dataset">นำข้อมูลเข้าระบบและสร้าง Dataset</p>
+      </div>
+      <div class="feature-card">
+        <h3 data-th="Data Cleaning" data-en="Data Cleaning">Data Cleaning</h3>
+        <p data-th="จัดการ Header, Data Type และตรวจสอบข้อมูล" data-en="Normalize headers, data types, and check data">จัดการ Header, Data Type และตรวจสอบข้อมูล</p>
+      </div>
+      <div class="feature-card">
+        <h3 data-th="Validation" data-en="Validation">Validation</h3>
+        <p data-th="ตรวจสอบ Required Fields, Unique Key และ Missing Data" data-en="Check required fields, unique keys and missing data">ตรวจสอบ Required Fields, Unique Key และ Missing Data</p>
+      </div>
+      <div class="feature-card">
+        <h3 data-th="KPI Engine" data-en="KPI Engine">KPI Engine</h3>
+        <p data-th="สร้างและคำนวณ KPI จากข้อมูลธุรกิจ" data-en="Build and calculate KPIs from business data">สร้างและคำนวณ KPI จากข้อมูลธุรกิจ</p>
+      </div>
+      <div class="feature-card">
+        <h3 data-th="Business Rule Engine" data-en="Business Rule Engine">Business Rule Engine</h3>
+        <p data-th="กำหนดเงื่อนไขทางธุรกิจเพื่อประเมินสถานะและความเสี่ยง" data-en="Set business conditions to assess status and risk">กำหนดเงื่อนไขทางธุรกิจเพื่อประเมินสถานะและความเสี่ยง</p>
+      </div>
+      <div class="feature-card">
+        <h3 data-th="Decision Engine" data-en="Decision Engine">Decision Engine</h3>
+        <p data-th="เปลี่ยนผลจาก KPI และ Business Rules เป็น Status, Priority, Risk, Recommendation" data-en="Turn KPI and rule results into Status, Priority, Risk, Recommendation">เปลี่ยนผลจาก KPI และ Business Rules เป็น Status, Priority, Risk, Recommendation</p>
+      </div>
+      <div class="feature-card">
+        <h3 data-th="Dashboard" data-en="Dashboard">Dashboard</h3>
+        <p data-th="รองรับมุมมอง Executive, Operations, Sales, Finance, HR, Procurement, Production, Manufacturing, Quality, Maintenance" data-en="Supports Executive, Operations, Sales, Finance, HR, Procurement, Production, Manufacturing, Quality, Maintenance views">รองรับมุมมอง Executive, Operations, Sales, Finance, HR, Procurement, Production, Manufacturing, Quality, Maintenance</p>
+      </div>
+      <div class="feature-card">
+        <h3 data-th="Root Cause Analysis" data-en="Root Cause Analysis">Root Cause Analysis</h3>
+        <p data-th="ช่วยวิเคราะห์ปัจจัยที่เกี่ยวข้องกับ KPI ที่ผิดปกติ" data-en="Helps trace the factors behind an abnormal KPI">ช่วยวิเคราะห์ปัจจัยที่เกี่ยวข้องกับ KPI ที่ผิดปกติ</p>
+      </div>
+      <div class="feature-card">
+        <h3 data-th="Scenario Simulation" data-en="Scenario Simulation">Scenario Simulation</h3>
+        <p data-th="ทดลองจำลองการแก้ปัญหาโดยแยกจากข้อมูลจริง" data-en="Test a fix in simulation, separate from real data">ทดลองจำลองการแก้ปัญหาโดยแยกจากข้อมูลจริง</p>
+      </div>
+      <div class="feature-card">
+        <h3 data-th="Reports" data-en="Reports">Reports</h3>
+        <p data-th="สร้างรายงานสำหรับ Executive, Management, Department, Operations, Board" data-en="Generate reports for Executive, Management, Department, Operations, Board">สร้างรายงานสำหรับ Executive, Management, Department, Operations, Board</p>
+      </div>
+      <div class="feature-card">
+        <h3 data-th="Export" data-en="Export">Export</h3>
+        <p data-th="รองรับ Excel, CSV, JSON, PDF, PNG, HTML, Markdown, Print" data-en="Supports Excel, CSV, JSON, PDF, PNG, HTML, Markdown, Print">รองรับ Excel, CSV, JSON, PDF, PNG, HTML, Markdown, Print</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. PRODUCT DEMO ============ -->
+<section class="section demo" id="demo">
+  <div class="section__inner reveal">
+    <h2 class="section__heading" data-th="เห็นการทำงานจริงในไม่กี่ขั้นตอน" data-en="See it work in a few steps">เห็นการทำงานจริงในไม่กี่ขั้นตอน</h2>
+
+    <div class="demo__layout">
+      <div class="demo__steps" role="tablist" aria-label="Demo steps">
+        <button class="demo__step is-active" role="tab" aria-selected="true" data-step="1" type="button"><span class="demo__step-num">1</span><span data-th="Load Data" data-en="Load Data">Load Data</span></button>
+        <button class="demo__step" role="tab" aria-selected="false" data-step="2" type="button"><span class="demo__step-num">2</span><span data-th="Analyze" data-en="Analyze">Analyze</span></button>
+        <button class="demo__step" role="tab" aria-selected="false" data-step="3" type="button"><span class="demo__step-num">3</span><span data-th="View KPI" data-en="View KPI">View KPI</span></button>
+        <button class="demo__step" role="tab" aria-selected="false" data-step="4" type="button"><span class="demo__step-num">4</span><span data-th="Find Problems" data-en="Find Problems">Find Problems</span></button>
+        <button class="demo__step" role="tab" aria-selected="false" data-step="5" type="button"><span class="demo__step-num">5</span><span data-th="Understand Root Cause" data-en="Understand Root Cause">Understand Root Cause</span></button>
+        <button class="demo__step" role="tab" aria-selected="false" data-step="6" type="button"><span class="demo__step-num">6</span><span data-th="Simulate a Fix" data-en="Simulate a Fix">Simulate a Fix</span></button>
+        <button class="demo__step" role="tab" aria-selected="false" data-step="7" type="button"><span class="demo__step-num">7</span><span data-th="Generate Report" data-en="Generate Report">Generate Report</span></button>
+        <button class="demo__step" role="tab" aria-selected="false" data-step="8" type="button"><span class="demo__step-num">8</span><span data-th="Export" data-en="Export">Export</span></button>
+      </div>
+      <div class="demo__preview">
+        <div class="demo__panel is-active" data-panel="1" role="tabpanel">
+          <div class="demo__placeholder">
+            <span data-th="SCREENSHOT PLACEHOLDER" data-en="SCREENSHOT PLACEHOLDER">SCREENSHOT PLACEHOLDER</span>
+            <p data-th="Load Data" data-en="Load Data">Load Data</p>
+          </div>
+        </div>
+        <div class="demo__panel" data-panel="2" role="tabpanel">
+          <div class="demo__placeholder"><span data-th="SCREENSHOT PLACEHOLDER" data-en="SCREENSHOT PLACEHOLDER">SCREENSHOT PLACEHOLDER</span><p data-th="Analyze" data-en="Analyze">Analyze</p></div>
+        </div>
+        <div class="demo__panel" data-panel="3" role="tabpanel">
+          <div class="demo__placeholder"><span data-th="SCREENSHOT PLACEHOLDER" data-en="SCREENSHOT PLACEHOLDER">SCREENSHOT PLACEHOLDER</span><p data-th="View KPI" data-en="View KPI">View KPI</p></div>
+        </div>
+        <div class="demo__panel" data-panel="4" role="tabpanel">
+          <div class="demo__placeholder"><span data-th="SCREENSHOT PLACEHOLDER" data-en="SCREENSHOT PLACEHOLDER">SCREENSHOT PLACEHOLDER</span><p data-th="Find Problems" data-en="Find Problems">Find Problems</p></div>
+        </div>
+        <div class="demo__panel" data-panel="5" role="tabpanel">
+          <div class="demo__placeholder"><span data-th="SCREENSHOT PLACEHOLDER" data-en="SCREENSHOT PLACEHOLDER">SCREENSHOT PLACEHOLDER</span><p data-th="Understand Root Cause" data-en="Understand Root Cause">Understand Root Cause</p></div>
+        </div>
+        <div class="demo__panel" data-panel="6" role="tabpanel">
+          <div class="demo__placeholder"><span data-th="SCREENSHOT PLACEHOLDER" data-en="SCREENSHOT PLACEHOLDER">SCREENSHOT PLACEHOLDER</span><p data-th="Simulate a Fix" data-en="Simulate a Fix">Simulate a Fix</p></div>
+        </div>
+        <div class="demo__panel" data-panel="7" role="tabpanel">
+          <div class="demo__placeholder"><span data-th="SCREENSHOT PLACEHOLDER" data-en="SCREENSHOT PLACEHOLDER">SCREENSHOT PLACEHOLDER</span><p data-th="Generate Report" data-en="Generate Report">Generate Report</p></div>
+        </div>
+        <div class="demo__panel" data-panel="8" role="tabpanel">
+          <div class="demo__placeholder"><span data-th="SCREENSHOT PLACEHOLDER" data-en="SCREENSHOT PLACEHOLDER">SCREENSHOT PLACEHOLDER</span><p data-th="Export" data-en="Export">Export</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11. REAL PRODUCT SCREENSHOTS ============ -->
+<section class="section gallery">
+  <div class="section__inner reveal">
+    <h2 class="section__heading" data-th="นี่คือระบบจริง ไม่ใช่ Concept" data-en="This is the real system, not a concept">นี่คือระบบจริง ไม่ใช่ Concept</h2>
+    <div class="gallery__grid" id="gallery-grid" data-track-view="product_screenshot_view">
+      <!-- populated by app.js from a data list, all placeholders -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12. WHY LOCAL-FIRST ============ -->
+<section class="section local-first">
+  <div class="section__inner reveal">
+    <div class="local-first__grid">
+      <div>
+        <h2 class="section__heading" data-th="ข้อมูลธุรกิจของคุณ ไม่จำเป็นต้องออกจากเครื่อง" data-en="Your business data never has to leave your device">ข้อมูลธุรกิจของคุณ ไม่จำเป็นต้องออกจากเครื่อง</h2>
+        <p class="section__lead" data-th="BizMind ถูกออกแบบในแนวทาง Local-first โดย Core Workflow ทำงานภายใน Browser ของผู้ใช้ และไม่มี Server กลางสำหรับประมวลผลข้อมูลธุรกิจ" data-en="BizMind is built local-first. The core workflow runs inside your browser, with no central server processing your business data.">BizMind ถูกออกแบบในแนวทาง Local-first โดย Core Workflow ทำงานภายใน Browser ของผู้ใช้ และไม่มี Server กลางสำหรับประมวลผลข้อมูลธุรกิจ</p>
+      </div>
+      <div class="flow-vertical" aria-hidden="true">
+        <span data-th="YOUR DATA" data-en="YOUR DATA">YOUR DATA</span>
+        <span class="flow-vertical__arrow">↓</span>
+        <span data-th="YOUR DEVICE" data-en="YOUR DEVICE">YOUR DEVICE</span>
+        <span class="flow-vertical__arrow">↓</span>
+        <span data-th="BIZMIND" data-en="BIZMIND">BIZMIND</span>
+        <span class="flow-vertical__arrow">↓</span>
+        <span data-th="ANALYSIS" data-en="ANALYSIS">ANALYSIS</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 13. SECURITY MESSAGE ============ -->
+<section class="section security">
+  <div class="section__inner reveal">
+    <h2 class="section__heading" data-th="Designed with privacy in mind" data-en="Designed with privacy in mind">Designed with privacy in mind</h2>
+    <ul class="security__list">
+      <li data-th="Local-first architecture" data-en="Local-first architecture">Local-first architecture</li>
+      <li data-th="No central server for core workflow" data-en="No central server for core workflow">No central server for core workflow</li>
+      <li data-th="PII gate" data-en="PII gate">PII gate</li>
+      <li data-th="Input validation" data-en="Input validation">Input validation</li>
+      <li data-th="No eval()" data-en="No eval()">No eval()</li>
+      <li data-th="No new Function()" data-en="No new Function()">No new Function()</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 14. WHO IS IT FOR ============ -->
+<section class="section personas">
+  <div class="section__inner reveal">
+    <h2 class="section__heading" data-th="สร้างมาเพื่อคนที่ต้องใช้ข้อมูลตัดสินใจ" data-en="Built for people who decide with data">สร้างมาเพื่อคนที่ต้องใช้ข้อมูลตัดสินใจ</h2>
+    <div class="persona-grid">
+      <div class="persona-card"><h3 data-th="Business Owner" data-en="Business Owner">Business Owner</h3><p data-th="ต้องการเห็นภาพรวมธุรกิจโดยไม่ต้องสร้างระบบเอง" data-en="Wants the full business picture without building a system">ต้องการเห็นภาพรวมธุรกิจโดยไม่ต้องสร้างระบบเอง</p></div>
+      <div class="persona-card"><h3 data-th="Executive" data-en="Executive">Executive</h3><p data-th="ต้องการ KPI และ Business Overview" data-en="Wants KPIs and a business overview">ต้องการ KPI และ Business Overview</p></div>
+      <div class="persona-card"><h3 data-th="Operations" data-en="Operations">Operations</h3><p data-th="ต้องการติดตาม Performance และปัญหา" data-en="Wants to track performance and issues">ต้องการติดตาม Performance และปัญหา</p></div>
+      <div class="persona-card"><h3 data-th="Sales" data-en="Sales">Sales</h3><p data-th="ต้องการวิเคราะห์ Sales Performance" data-en="Wants to analyze sales performance">ต้องการวิเคราะห์ Sales Performance</p></div>
+      <div class="persona-card"><h3 data-th="Finance" data-en="Finance">Finance</h3><p data-th="ต้องการดู Financial KPI" data-en="Wants to see financial KPIs">ต้องการดู Financial KPI</p></div>
+      <div class="persona-card"><h3 data-th="HR" data-en="HR">HR</h3><p data-th="ต้องการวิเคราะห์ข้อมูล HR" data-en="Wants to analyze HR data">ต้องการวิเคราะห์ข้อมูล HR</p></div>
+      <div class="persona-card"><h3 data-th="Procurement" data-en="Procurement">Procurement</h3><p data-th="ต้องการติดตาม Procurement / Supply Chain" data-en="Wants to track procurement / supply chain">ต้องการติดตาม Procurement / Supply Chain</p></div>
+      <div class="persona-card"><h3 data-th="Production" data-en="Production">Production</h3><p data-th="ต้องการติดตาม Production และ Manufacturing" data-en="Wants to track production and manufacturing">ต้องการติดตาม Production และ Manufacturing</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 15. ONE PRODUCT MULTIPLE VIEWS ============ -->
+<section class="section views">
+  <div class="section__inner reveal">
+    <h2 class="section__heading" data-th="หนึ่งระบบ หลายมุมมองทางธุรกิจ" data-en="One system, many business views">หนึ่งระบบ หลายมุมมองทางธุรกิจ</h2>
+    <p class="section__lead" data-th="Industry Pack สามารถมีมุมมองหลาย Role เพื่อให้ผู้ใช้แต่ละคนเข้าถึงข้อมูลที่เกี่ยวข้องกับงานของตัวเอง" data-en="An Industry Pack can carry multiple role views, so each user reaches the data relevant to their own job.">Industry Pack สามารถมีมุมมองหลาย Role เพื่อให้ผู้ใช้แต่ละคนเข้าถึงข้อมูลที่เกี่ยวข้องกับงานของตัวเอง</p>
+    <div class="tree" aria-hidden="true">
+      <div class="tree__root">BIZMIND</div>
+      <div class="tree__row">
+        <div class="tree__branch">Executive</div>
+        <div class="tree__branch">Operations</div>
+        <div class="tree__branch">Domain</div>
+      </div>
+      <div class="tree__row tree__row--leaves">
+        <div class="tree__leaf">Sales</div>
+        <div class="tree__leaf">Finance</div>
+        <div class="tree__leaf">HR</div>
+        <div class="tree__leaf">Production</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 16. DIFFERENTIATION ============ -->
+<section class="section compare">
+  <div class="section__inner reveal">
+    <h2 class="section__heading" data-th="อยู่ตรงกลางระหว่าง BI Cloud กับ Self-hosted" data-en="Between Cloud BI and Self-hosted BI">อยู่ตรงกลางระหว่าง BI Cloud กับ Self-hosted</h2>
+    <div class="compare__table-wrap">
+      <table class="compare__table">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col" data-th="Cloud BI" data-en="Cloud BI">Cloud BI</th>
+            <th scope="col" data-th="Self-hosted BI" data-en="Self-hosted BI">Self-hosted BI</th>
+            <th scope="col" class="compare__table-highlight">BizMind</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" data-th="Server" data-en="Server">Server</th>
+            <td data-th="ต้องมีระบบ Cloud" data-en="Requires a cloud system">ต้องมีระบบ Cloud</td>
+            <td data-th="ต้องมี Server" data-en="Requires a server">ต้องมี Server</td>
+            <td class="compare__table-highlight" data-th="ไม่ต้องมี Server สำหรับ Core Workflow" data-en="No server for core workflow">ไม่ต้องมี Server สำหรับ Core Workflow</td>
+          </tr>
+          <tr>
+            <th scope="row" data-th="Subscription" data-en="Subscription">Subscription</th>
+            <td data-th="โดยทั่วไปมี" data-en="Typically yes">โดยทั่วไปมี</td>
+            <td data-th="แล้วแต่ระบบ" data-en="Depends on the system">แล้วแต่ระบบ</td>
+            <td class="compare__table-highlight" data-th="แนวทางซื้อขาด" data-en="One-time purchase approach">แนวทางซื้อขาด</td>
+          </tr>
+          <tr>
+            <th scope="row" data-th="IT Dependency" data-en="IT Dependency">IT Dependency</th>
+            <td data-th="สูงกว่า" data-en="Higher">สูงกว่า</td>
+            <td data-th="สูงกว่า" data-en="Higher">สูงกว่า</td>
+            <td class="compare__table-highlight" data-th="ต่ำกว่า" data-en="Lower">ต่ำกว่า</td>
+          </tr>
+          <tr>
+            <th scope="row" data-th="Local-first" data-en="Local-first">Local-first</th>
+            <td data-th="ไม่ใช่จุดหลัก" data-en="Not the main point">ไม่ใช่จุดหลัก</td>
+            <td data-th="แล้วแต่ระบบ" data-en="Depends on the system">แล้วแต่ระบบ</td>
+            <td class="compare__table-highlight" data-th="จุดขายหลัก" data-en="Core selling point">จุดขายหลัก</td>
+          </tr>
+          <tr>
+            <th scope="row" data-th="Business Logic" data-en="Business Logic">Business Logic</th>
+            <td data-th="แตกต่างตามระบบ" data-en="Varies by system">แตกต่างตามระบบ</td>
+            <td data-th="แตกต่างตามระบบ" data-en="Varies by system">แตกต่างตามระบบ</td>
+            <td class="compare__table-highlight" data-th="Built-in" data-en="Built-in">Built-in</td>
+          </tr>
+          <tr>
+            <th scope="row" data-th="Decision Support" data-en="Decision Support">Decision Support</th>
+            <td data-th="แตกต่างตามระบบ" data-en="Varies by system">แตกต่างตามระบบ</td>
+            <td data-th="แตกต่างตามระบบ" data-en="Varies by system">แตกต่างตามระบบ</td>
+            <td class="compare__table-highlight" data-th="Built-in" data-en="Built-in">Built-in</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 17. TECHNICAL DIFFERENTIATOR ============ -->
+<section class="section stack">
+  <div class="section__inner reveal">
+    <h2 class="section__heading" data-th="ไม่ได้สร้างแค่ UI แต่สร้าง Engine ข้างหลัง" data-en="Not just a UI — an engine underneath">ไม่ได้สร้างแค่ UI แต่สร้าง Engine ข้างหลัง</h2>
+    <div class="stack__layers" aria-hidden="true">
+      <div class="stack__layer">Input Engine</div>
+      <div class="stack__layer">Cleaning Engine</div>
+      <div class="stack__layer">Validation Engine</div>
+      <div class="stack__layer">Rule Engine</div>
+      <div class="stack__layer">Formula Engine</div>
+      <div class="stack__layer">KPI Engine</div>
+      <div class="stack__layer">Decision Engine</div>
+      <div class="stack__layer">Dashboard Engine</div>
+      <div class="stack__layer">Report Engine</div>
+      <div class="stack__layer">Export Engine</div>
+    </div>
+    <p class="section__lead" data-th="BizMind ถูกออกแบบเป็นระบบ Engine หลายชั้น โดยแยก Data Processing, Business Logic, KPI, Decision และ Presentation ออกจากกัน" data-en="BizMind is built as a layered engine system, separating Data Processing, Business Logic, KPI, Decision and Presentation.">BizMind ถูกออกแบบเป็นระบบ Engine หลายชั้น โดยแยก Data Processing, Business Logic, KPI, Decision และ Presentation ออกจากกัน</p>
+  </div>
+</section>
+
+<!-- ============ 18. BUSINESS OUTCOME ============ -->
+<section class="section outcomes">
+  <div class="section__inner reveal">
+    <div class="outcome-grid">
+      <div class="outcome-card">
+        <h3 data-th="Faster Analysis" data-en="Faster Analysis">Faster Analysis</h3>
+        <p data-th="ลดขั้นตอนจากข้อมูลดิบไปสู่ Insight" data-en="Fewer steps from raw data to insight">ลดขั้นตอนจากข้อมูลดิบไปสู่ Insight</p>
+      </div>
+      <div class="outcome-card">
+        <h3 data-th="Less IT Dependency" data-en="Less IT Dependency">Less IT Dependency</h3>
+        <p data-th="ลดการพึ่งพา Server และการติดตั้งระบบสำหรับ Core Workflow" data-en="Less reliance on servers and installs for the core workflow">ลดการพึ่งพา Server และการติดตั้งระบบสำหรับ Core Workflow</p>
+      </div>
+      <div class="outcome-card">
+        <h3 data-th="Local Data Processing" data-en="Local Data Processing">Local Data Processing</h3>
+        <p data-th="เหมาะกับผู้ที่ต้องการเก็บข้อมูลไว้ในเครื่อง" data-en="Fits anyone who wants data to stay on their device">เหมาะกับผู้ที่ต้องการเก็บข้อมูลไว้ในเครื่อง</p>
+      </div>
+      <div class="outcome-card">
+        <h3 data-th="Repeatable Analysis" data-en="Repeatable Analysis">Repeatable Analysis</h3>
+        <p data-th="ใช้ KPI และ Business Rules ที่กำหนดไว้ซ้ำได้" data-en="Reuse the KPIs and business rules you've defined">ใช้ KPI และ Business Rules ที่กำหนดไว้ซ้ำได้</p>
+      </div>
+      <div class="outcome-card">
+        <h3 data-th="Decision Support" data-en="Decision Support">Decision Support</h3>
+        <p data-th="ไม่ได้หยุดแค่การแสดงตัวเลข แต่ช่วยเชื่อมไปสู่ Decision และ Recommendation" data-en="Goes past showing numbers, toward decisions and recommendations">ไม่ได้หยุดแค่การแสดงตัวเลข แต่ช่วยเชื่อมไปสู่ Decision และ Recommendation</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 19. PRICING (no verified pricing -> Get Product Information) ============ -->
+<section class="section pricing" id="pricing">
+  <div class="section__inner reveal" data-track-view="pricing_view">
+    <h2 class="section__heading" data-th="เลือกแบบที่เหมาะกับคุณ" data-en="Choose what fits you">เลือกแบบที่เหมาะกับคุณ</h2>
+    <div class="pricing__notice">
+      <p data-th="รายละเอียดแพ็กเกจและราคายังอยู่ระหว่างจัดทำ กรอกข้อมูลติดต่อเพื่อรับรายละเอียด Starter, Professional และ Industry Pack เมื่อพร้อมเผยแพร่" data-en="Package details and pricing are still being finalized. Leave your contact to get details on Starter, Professional and Industry Pack once published.">รายละเอียดแพ็กเกจและราคายังอยู่ระหว่างจัดทำ กรอกข้อมูลติดต่อเพื่อรับรายละเอียด Starter, Professional และ Industry Pack เมื่อพร้อมเผยแพร่</p>
+      <a class="btn btn--primary" href="#contact" data-th="Get Product Information" data-en="Get Product Information" data-track="pricing_view">Get Product Information</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 21/24. FINAL CTA ============ -->
+<section class="section final-cta">
+  <div class="section__inner reveal">
+    <h2 class="final-cta__headline" data-th="เปลี่ยนข้อมูลธุรกิจของคุณให้กลายเป็นคำตอบที่ใช้งานได้" data-en="Turn your business data into an answer you can use">เปลี่ยนข้อมูลธุรกิจของคุณให้กลายเป็นคำตอบที่ใช้งานได้</h2>
+    <p class="final-cta__sub" data-th="ไม่ต้องเริ่มจากระบบขนาดใหญ่ ไม่ต้องรอ Server และไม่ต้องสร้าง BI infrastructure ใหม่ทั้งหมด" data-en="No need to start with a huge system, wait on a server, or rebuild your BI infrastructure from scratch.">ไม่ต้องเริ่มจากระบบขนาดใหญ่ ไม่ต้องรอ Server และไม่ต้องสร้าง BI infrastructure ใหม่ทั้งหมด</p>
+    <div class="final-cta__ctas">
+      <a class="btn btn--primary btn--lg" id="checkout-cta" href="#" data-th="ดู BizMind" data-en="See BizMind" data-track="buy_click">ดู BizMind</a>
+      <a class="btn btn--ghost btn--lg" href="#demo" data-th="ดู Demo" data-en="See Demo" data-track="demo_click">ดู Demo</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 25. TRUST SECTION (no fake proof) ============ -->
+<section class="section trust">
+  <div class="section__inner reveal">
+    <div class="trust-grid">
+      <div class="trust-card">
+        <h3 data-th="Built Product" data-en="Built Product">Built Product</h3>
+        <p data-th="Developed as an independent BI product" data-en="Developed as an independent BI product">Developed as an independent BI product</p>
+      </div>
+      <div class="trust-card">
+        <h3 data-th="Engineering" data-en="Engineering">Engineering</h3>
+        <p data-th="Built with a modular data and decision architecture" data-en="Built with a modular data and decision architecture">Built with a modular data and decision architecture</p>
+      </div>
+      <div class="trust-card">
+        <h3 data-th="Product Approach" data-en="Product Approach">Product Approach</h3>
+        <p data-th="Designed from business problem to working product" data-en="Designed from business problem to working product">Designed from business problem to working product</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 22 & 23. FAQ + OBJECTION HANDLING ============ -->
+<section class="section faq" id="faq">
+  <div class="section__inner reveal">
+    <h2 class="section__heading" data-th="คำถามที่ลูกค้ามักสงสัย" data-en="Questions customers usually ask">คำถามที่ลูกค้ามักสงสัย</h2>
+    <div class="faq__list" id="faq-list">
+      <div class="faq__item">
+        <button class="faq__q" type="button" aria-expanded="false">
+          <span data-th="ต้องมี Server หรือไม่?" data-en="Do I need a server?">ต้องมี Server หรือไม่?</span>
+          <span class="faq__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq__a"><p data-th="BizMind ถูกออกแบบในแนวทาง Local-first และ Core Workflow ทำงานใน Browser ของผู้ใช้ โดยไม่ต้องพึ่ง Server กลางสำหรับการประมวลผลหลัก" data-en="BizMind is built local-first. The core workflow runs in your browser and does not depend on a central server for the main processing.">BizMind ถูกออกแบบในแนวทาง Local-first และ Core Workflow ทำงานใน Browser ของผู้ใช้ โดยไม่ต้องพึ่ง Server กลางสำหรับการประมวลผลหลัก</p></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" type="button" aria-expanded="false">
+          <span data-th="ต้องจ่ายรายเดือนหรือไม่?" data-en="Do I pay monthly?">ต้องจ่ายรายเดือนหรือไม่?</span>
+          <span class="faq__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq__a"><p data-th="Product Positioning ของ BizMind คือการซื้อขาดและไม่มี Subscription สำหรับ Core Product ตามแพ็กเกจที่กำหนด" data-en="BizMind's positioning is a one-time purchase, with no subscription for the core product under the defined package.">Product Positioning ของ BizMind คือการซื้อขาดและไม่มี Subscription สำหรับ Core Product ตามแพ็กเกจที่กำหนด</p></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" type="button" aria-expanded="false">
+          <span data-th="ข้อมูลออกจากเครื่องหรือไม่?" data-en="Does data leave my device?">ข้อมูลออกจากเครื่องหรือไม่?</span>
+          <span class="faq__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq__a"><p data-th="Core Workflow ถูกออกแบบให้ประมวลผลข้อมูลภายในเครื่องของผู้ใช้" data-en="The core workflow is designed to process data on your own device.">Core Workflow ถูกออกแบบให้ประมวลผลข้อมูลภายในเครื่องของผู้ใช้</p></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" type="button" aria-expanded="false">
+          <span data-th="ใช้กับข้อมูลของตัวเองได้หรือไม่?" data-en="Can I use my own data?">ใช้กับข้อมูลของตัวเองได้หรือไม่?</span>
+          <span class="faq__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq__a"><p data-th="ได้ โดยระบบมี Data Input และ Data Processing สำหรับนำข้อมูลเข้าสู่ระบบ" data-en="Yes — the system has Data Input and Data Processing to bring your data in.">ได้ โดยระบบมี Data Input และ Data Processing สำหรับนำข้อมูลเข้าสู่ระบบ</p></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" type="button" aria-expanded="false">
+          <span data-th="รองรับ Excel หรือไม่?" data-en="Does it support Excel?">รองรับ Excel หรือไม่?</span>
+          <span class="faq__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq__a">
+          <p data-th="ระบบมี Export เป็น Excel และรองรับ Data Input ตามรูปแบบที่ Product รองรับจริง" data-en="The system exports to Excel and supports Data Input in the formats the product actually supports.">ระบบมี Export เป็น Excel และรองรับ Data Input ตามรูปแบบที่ Product รองรับจริง</p>
+          <p data-th="ดูรายละเอียด Format ที่รองรับใน Product Documentation" data-en="See the supported formats in the Product Documentation">ดูรายละเอียด Format ที่รองรับใน Product Documentation</p>
+        </div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" type="button" aria-expanded="false">
+          <span data-th="ใช้หลายคนได้หรือไม่?" data-en="Can multiple people use it?">ใช้หลายคนได้หรือไม่?</span>
+          <span class="faq__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq__a"><p data-th="Product รุ่นปัจจุบันใช้โมเดล 1 คนซื้อ 1 ไฟล์ ไม่ใช่ระบบ Multi-user Permission กลาง" data-en="The current product uses a one-buyer-one-file model, not a central multi-user permission system.">Product รุ่นปัจจุบันใช้โมเดล 1 คนซื้อ 1 ไฟล์ ไม่ใช่ระบบ Multi-user Permission กลาง</p></div>
+      </div>
+      <div class="faq__item">
+        <button class="faq__q" type="button" aria-expanded="false">
+          <span data-th="มี Role-based Permission หรือไม่?" data-en="Is there role-based permission?">มี Role-based Permission หรือไม่?</span>
+          <span class="faq__icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq__a"><p data-th="ไม่มีระบบ Permission กลางแบบ Multi-user ใน Product รุ่นปัจจุบัน" data-en="There is no central multi-user permission system in the current product.">ไม่มีระบบ Permission กลางแบบ Multi-user ใน Product รุ่นปัจจุบัน</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 24. FINAL PRODUCT MESSAGE ============ -->
+<section class="section final-message">
+  <div class="section__inner reveal">
+    <p class="final-message__text">
+      <strong data-th="BizMind ไม่ได้เป็นเพียง Dashboard" data-en="BizMind isn't just a dashboard">BizMind ไม่ได้เป็นเพียง Dashboard</strong><br>
+      <span data-th="มันคือระบบที่พาข้อมูลจาก Data → KPI → Analysis → Decision → Report" data-en="It's a system that carries data from Data → KPI → Analysis → Decision → Report">มันคือระบบที่พาข้อมูลจาก Data → KPI → Analysis → Decision → Report</span><br>
+      <span data-th="ในรูปแบบ Local-first Business Intelligence ที่ไม่ต้องพึ่ง Server หรือ Subscription สำหรับ Core Product" data-en="as Local-first Business Intelligence that doesn't depend on a server or subscription for the core product.">ในรูปแบบ Local-first Business Intelligence ที่ไม่ต้องพึ่ง Server หรือ Subscription สำหรับ Core Product</span>
+    </p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ 26. FOOTER ============ -->
+<footer class="footer" id="contact">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <p class="footer__name">BizMind Enterprise Dashboard</p>
+      <p class="footer__tag" data-th="Local-first Business Intelligence" data-en="Local-first Business Intelligence">Local-first Business Intelligence</p>
+      <p class="footer__pillars" data-th="Data • KPI • Decision • Reporting" data-en="Data • KPI • Decision • Reporting">Data • KPI • Decision • Reporting</p>
+    </div>
+    <nav class="footer__links" aria-label="Footer">
+      <a href="#product" data-th="Product" data-en="Product">Product</a>
+      <a href="#features" data-th="Features" data-en="Features">Features</a>
+      <a href="#demo" data-th="Demo" data-en="Demo">Demo</a>
+      <a href="#pricing" data-th="Pricing" data-en="Pricing">Pricing</a>
+      <a href="#faq" data-th="FAQ" data-en="FAQ">FAQ</a>
+      <a href="#contact" data-th="Contact" data-en="Contact">Contact</a>
+      <a href="#" data-th="Privacy" data-en="Privacy">Privacy</a>
+      <a href="#" data-th="Terms" data-en="Terms">Terms</a>
+    </nav>
+  </div>
+</footer>
+
+<!-- ============ 31. MOBILE STICKY CTA ============ -->
+<div class="sticky-cta" id="sticky-cta">
+  <a class="sticky-cta__btn sticky-cta__btn--ghost" href="#demo" data-th="ดู Demo" data-en="See Demo" data-track="demo_click">ดู Demo</a>
+  <a class="sticky-cta__btn sticky-cta__btn--primary" href="#pricing" data-th="ซื้อ" data-en="Buy" data-track="buy_click">ซื้อ</a>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
